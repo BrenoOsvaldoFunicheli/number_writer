@@ -22,15 +22,18 @@ Para esse projeto foram implementados alguns conceitos de programação e especi
 
 * POO e funcional programing: Foram implementados conceitos de classes concretas e métodos abstratos, bem como programação funcional.
 
-* Módulos: O programa solução foi construído como um módulo e publicado no Pypi.
+* Módulos: O programa solução foi construído como um pacote python com diversos módulo e publicado no Pypi, permitindo extensões.
 
 
 ## :blue_book: Requisições
 
 
+Escreva um código que leia um valor em reais e escreva o valor por extenso,
 
-### Requisições
+Ex: 1,00 => um real
+1000,54 => mil reais e cinquenta e quatro centavos
 
+O programa deverá receber o caminho de um arquivo txt de entrada, e o caminho de um arquivo txt de saída. O script irá ler o arquivo de entrada, onde cada linha do arquivo irá conter um valor em reais no formato XXXX,XX.  Para cada linha do arquivo de entrada, deverá ser escrita uma linha de saída no arquivo de saída com o valor original e o valor por extenso.
 
 
 
@@ -58,6 +61,7 @@ Existem duas maneiras de construir e executar este aplicativo, primeiro executan
     source .env/bin/activate
     pip install -r requirements.txt
     python pytest
+    cd number_writer/
     python number_writer -i input.txt -o output.txt -l pt
 
 ```
