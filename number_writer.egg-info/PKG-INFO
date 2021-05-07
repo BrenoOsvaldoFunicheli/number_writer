@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: number-writer
-Version: 0.0.1
-Summary: A small example package to transform number into text
-Home-page: https://github.com/pypa/sampleproject
-Author: Example Author
+Version: 0.0.2
+Summary: A small package to transform number into text
+Home-page: https://github.com/BrenoOsvaldoFunicheli/number_writer
+Author: Breno Osvaldo
 Author-email: bfunicheli@estudante.ufscar.com
 License: UNKNOWN
 Description: UNKNOWN
