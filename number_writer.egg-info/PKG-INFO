@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: number-writer
+Version: 0.0.1
+Summary: A small example package to transform number into text
+Home-page: https://github.com/pypa/sampleproject
+Author: Example Author
+Author-email: bfunicheli@estudante.ufscar.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

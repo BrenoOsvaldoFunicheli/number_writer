@@ -1,0 +1,8 @@
+README.md
+setup.py
+number_writer/__init__.py
+number_writer/__main__.py
+number_writer.egg-info/PKG-INFO
+number_writer.egg-info/SOURCES.txt
+number_writer.egg-info/dependency_links.txt
+number_writer.egg-info/top_level.txt
