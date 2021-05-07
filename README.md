@@ -62,3 +62,11 @@ Existem duas maneiras de construir e executar este aplicativo, primeiro executan
 ```
 
 
+### Pypi install
+
+
+```console
+
+   pip install number-writer
+
+```
