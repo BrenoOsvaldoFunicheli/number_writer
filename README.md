@@ -59,9 +59,9 @@ Existem duas maneiras de construir e executar este aplicativo, primeiro executan
     git clone https://github.com/BrenoOsvaldoFunicheli/number_writer
     python3 -m venv .env
     source .env/bin/activate
+    cd number_writer/
     pip install -r requirements.txt
     python pytest
-    cd number_writer/
     python number_writer -i input.txt -o output.txt -l pt
 
 ```
