@@ -8,39 +8,39 @@
 
 ## Sections
 
-* :scroll: [Patterns](#scroll-patterns) (optional)
-* :blue_book: [Requirements](#blue_book-requirements)
-* :postbox: [Testing](#postbox-testing)
+* :scroll: [Padrões](#scroll-patterns) (optional)
+* :blue_book: [Requisições](#blue_book-requirements)
+* :postbox: [Testing e App](#postbox-testing)
 
-## :scroll: Patterns
+## :scroll: Padrões
 
-In order to create the real stage API to consuming I follow some best pratice and concepts of RESTful APIs must has, beside this, I provide the detailed documentation about API with the postman to test endpoints.
+Para esse projeto foram implementados alguns conceitos de programação e especificas do python
 
-### Implemented concepts
+### Conceitos
 
-* Versioning: All endpoints contains as prefix /api/v1/ that show the version api is first. So when I change some detail or implementation of API I Don't broken any implementation on my API in other application.
+* Versioning: Foi utilizado o sistemas de versionamento Git para manutenço de código multi-máquinas.
 
-* Pagination: As many people can consuming the endpoints I need provide some throughput data. to first version we apply the limit with 5 registries.
+* POO e funcional programing: Foram implementados conceitos de classes concretas e métodos abstratos, bem como programação funcional.
 
-* Authentication: I make the API visualization with the JWT tokens to Authentication on each endpoints
+* Módulos: O programa solução foi construído como um módulo e publicado no Pypi.
 
-## :blue_book: Requirements
 
-The system consists of a creator of send requests API, where you can register using email and password, and schedule some requests to send after.
-
-### Requirements
+## :blue_book: Requisições
 
 
 
+### Requisições
 
-## :postbox: Testing
 
-Test automation is the use of software to control the execution of the software test, the comparison of the expected results with the actual results, the configuration of the test pre-conditions and other control and test report functions.
-In this repository I provide some task to show the knowledge with tests.
 
-## :wrench: Building App
 
-There are two way to build and run this application, first is running with isolate app, second is with docker that separates the context and allows running withou previous dependecies.  
+## :postbox: Testing e App
+
+Automação de teste é o uso de software para controlar a execução do teste de software, a comparação dos resultados esperados com os resultados reais, a configuração das pré-condições de teste e outras funções de controle e relatório de teste.
+Neste repositório eu forneço algumas tarefas para mostrar o conhecimento com testes.
+
+
+Existem duas maneiras de construir e executar este aplicativo, primeiro executando com isolate app, segundo é baixando o pacote com pypi.
 
 ### Normal build
 
@@ -49,30 +49,17 @@ There are two way to build and run this application, first is running with isola
 3. Run o virtualenv
 4. Install all dependecies
 5. Run test
-6. Run migrations
-7. Run app
+6. Run app
 
 ```console
 
-    git clone https://github.com/BrenoOsvaldoFunicheli/magalu-api
+    git clone https://github.com/BrenoOsvaldoFunicheli/number_writer
     python3 -m venv .env
     source .env/bin/activate
     pip install -r requirements.txt
-    python manage.py test
-    python manage.py migrate
-    python manage.py runserver 0.0.0.0:8002
-
-```
-
-#### Step by Step to Set Up
-
-For API build you need some simple steps, download the this repository with the follow command:
-
-``` linux
-
-git clone https://github.com/BrenoOsvaldoFunicheli/magalu-api
+    python pytest
+    python number_writer -i input.txt -o output.txt -l pt
 
 ```
 
 
-```
